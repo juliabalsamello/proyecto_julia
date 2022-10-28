@@ -1,0 +1,534 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: rgb(42, 42, 42);
+}
+
+header{
+    position: sticky;
+    top:0px;
+    z-index: 2;
+}
+
+a{
+    color: white; 
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+}
+
+main{
+    height: 1000px;
+    background-color: white;
+}
+
+
+footer{
+    background-color: rgb(42, 42, 42);
+    height: 60px;
+    padding: 10px;
+}
+
+.p_footer{
+    color: white;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    text-align: center;
+}
+
+.h1{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+/*Index*/
+
+.main_index{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div_img{
+    height: 85%;
+    width: 100%;
+}
+
+.img_index{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.grilla_index{
+    background-color: rgb(42, 42, 42);
+    height: 15%;
+    width: 80%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 45% 55%;
+    grid-template-areas:"h1 h2 h3"
+                        "p1 p2 p3";
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+                        
+}
+
+.h2_index1{
+    grid-area: h1;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    
+ 
+}
+
+.h2_index2{
+    grid-area: h2;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    
+}
+
+.h2_index3{
+    grid-area: h3;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    
+}
+
+.p_index1{
+    grid-area: p1;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    width: 80%;
+    align-self: flex-start;
+     
+}
+
+
+
+.p_index2{
+    grid-area: p2;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    width: 80%;
+    align-self: flex-start;
+    
+    
+
+}
+
+.p_index3{
+    grid-area: p3;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    width: 80%;
+    align-self: flex-start;
+}
+
+@media only screen and (max-width:400px){
+
+    .grilla_index{
+        
+        width: 95%;
+        grid-template-rows: 30% 70%;
+
+    }
+
+    .h2_index1{
+        font-size: 12px;
+     
+    }
+    
+    .h2_index2{
+        font-size: 12px;
+        
+    }
+    
+    .h2_index3{
+        font-size: 12px;
+        padding-top: 5px;
+        
+    }
+    
+    .p_index1{
+        font-size: 11px;
+        align-self: center;
+        padding-bottom: 5px;
+        
+    }
+    
+    .p_index2{
+        font-size: 11px;
+        align-self: center;
+        padding-bottom: 20px;
+        
+    
+    }
+    
+    .p_index3{
+        font-size: 11px;
+        align-self: center;
+        padding-bottom: 5px;
+        
+        
+    }
+   
+}
+
+@media only screen and (min-width:900px){
+
+    
+
+    .h2_index1{
+        font-size: 16px;
+     
+    }
+    
+    .h2_index2{
+        font-size: 16px;
+        
+    }
+    
+    .h2_index3{
+        font-size: 16px;
+        
+        
+    }
+    
+    .p_index1{
+        font-size: 15px;
+       
+       
+        
+    }
+    
+    .p_index2{
+        font-size: 15px;
+        
+       
+        
+    
+    }
+    
+    .p_index3{
+        font-size: 15px;
+       
+       
+        
+        
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+/*Contacto*/
+
+.main_contacto{
+    background-image: url(../img/logo.jpeg);
+    background-repeat: no-repeat;
+    background-position: 80% 10%;
+    background-size: 500px;
+}
+
+.h2_contacto{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    margin-left: 30px;
+}
+
+.contacto{
+    height: 100%;
+    width: 60%;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+.ubicacion{
+    height: 35%;
+    width: 95%;
+    margin: 20px;
+}
+
+.caja{
+    margin: 10px;
+    width: 300px;
+    height: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+#caja_comentario{
+    height: 150px;
+    padding-top: 10px;
+}
+
+.button{
+    background-color: rgb(42, 42, 42);
+    height: 30px;
+    width: 50px;
+    color: white;
+}
+
+
+/*Empresa*/
+
+.main_empresa{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.section_empresa{
+    background-color:rgb(42, 42, 42);
+    width: 70%;
+    height: 45%;
+    display: grid;
+    grid-template-columns: 40% 35%;
+    grid-template-rows: 20% 30% 30%;
+    grid-template-areas: "img titulo"
+                         "img parrafo1"
+                         "img parrafo2";
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: space-around;
+
+}
+
+.img_empresa{
+    grid-area: img;
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.img_empresa:hover{
+    transform: scale(1.1, 1.1);
+    transition: 2s;
+}
+
+
+
+
+.titulo_empresa{
+    grid-area: titulo;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    
+}
+
+.parrafo1_empresa{
+    grid-area: parrafo1;
+    color: white;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    align-self: flex-start;
+    
+}
+
+.parrafo2_empresa{
+    grid-area: parrafo2;
+    color: white;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    align-self: flex-start;
+
+}
+
+@media only screen and (max-width:400px){
+
+    a{
+        font-size: 11px;
+    }
+    
+
+
+    .section_empresa{
+        width: 100%;
+        grid-template-columns: 45% 40%;
+        grid-template-rows: 10% 40% 40%;
+       
+    }
+    
+    .img_empresa{
+        height: 80%;
+    }
+    
+    .titulo_empresa{
+        font-size: 13.5px;
+        align-self: flex-end;
+    }
+    
+    .parrafo1_empresa{
+        font-size: 13px;
+        align-self: center;
+    }
+    
+    .parrafo2_empresa{
+        font-size: 13px;
+    
+    }
+    
+    footer{
+        height: 40px;
+    }
+    
+    .p_footer{
+        font-size: 11px;
+    }
+    
+}
+
+@media only screen and (min-width:900px){
+
+    
+    .section_empresa{
+        width: 80%;
+        grid-template-columns: 45% 30%;
+        grid-template-rows: 20% 35% 35%;
+    }
+    
+   
+    .titulo_empresa{
+        font-size: 20px;
+    }
+    
+    .parrafo1_empresa{
+        font-size: 17px;
+    }
+    
+    .parrafo2_empresa{
+        font-size: 17px;
+    }
+    
+}
+
+
+
+
+
+
+/*Servicios*/
+
+.main_servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.padre_servicios{
+    display: flex;
+    height: 400px;
+    width: 85%;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(42, 42, 42);
+    
+
+}
+
+
+.hijo_servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 350px;
+    width: 30%;
+    background-color: white;
+}
+
+.img_servicios{
+    width: 80%;
+    height: 80%;
+}
+
+.img_servicios:hover{
+    width: 60%;
+    height:60%;
+    transition: 2s;
+    border-radius: 10px;
+}
+
+.h2_servicios{
+    width: 60%;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+
+/*Obras*/
+
+.main_obras{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.padre_obras{
+    display: flex;
+    height: 400px;
+    width: 85%;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(42, 42, 42) ;
+}
+
+.hijo_obras{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 350px;
+    width: 30%;
+    background-color: white;
+}
+
+.img_obras{
+    width: 90%;
+    height: 90%
+}
+
+
